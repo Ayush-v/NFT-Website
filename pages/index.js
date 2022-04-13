@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Herosection from "../components/sections/Herosection";
-import Logosection from "../components/sections/LogoSection";
+import Logosection from "../components/sections/Logosection";
 
 export default function Home() {
   return (
