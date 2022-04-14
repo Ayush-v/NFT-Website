@@ -64,7 +64,7 @@ const Navbar = () => {
 
       <div className="absolute w-full h-full lg:-left-[650.34px] lg:-top-[400px] -z-30 sm:-left-[400px] -left-[200px] -top-[400px]">
         <Image
-          src="/looperGroup.svg"
+          src="/LooperGroup.svg"
           alt="imf"
           layout="fill"
           objectFit="contain"
