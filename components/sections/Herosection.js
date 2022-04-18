@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Herosection = () => {
   return (
-    <div className="py-20 mx-auto max-w-7xl px-8">
+    <div className="py-20 mx-auto max-w-7xl px-8 ">
       <div className="flex flex-col lg:flex-row justify-between items-center gap-20 lg:gap-2">
         <div className="md:w-1/2 flex flex-col gap-5 items-start">
           <h1 className="text-5xl md:text-6xl md:leading-[81px]">

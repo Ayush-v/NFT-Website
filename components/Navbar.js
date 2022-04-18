@@ -2,9 +2,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import "remixicon/fonts/remixicon.css";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const [open, isOpen] = useState(false);
+
+  useEffect(() => {
+    if (open === true) {
+      document.querySelector("body").style.position = "fixed";
+    } else if (open === false) {
+      document.querySelector("body").style.position = "initial";
+    }
+  }, [open]);
 
   return (
     <>
@@ -22,6 +31,7 @@ const Navbar = () => {
         </button>
 
         <nav className={open ? "visible md:block" : "hidden md:block"}>
+          {/* <nav className={"md:block" + open ? "visible" : "hidden"}> */}
           <ul className="flex flex-col p-8 fixed top-20 right-5 gap-6 bg-black/[.09] backdrop-blur-xl rounded-2xl z-40 md:static md:flex-row md:bg-transparent md:p-0 text-xl">
             <li className="relative transition-all underline-anim active">
               <Link href="/">
@@ -62,7 +72,7 @@ const Navbar = () => {
         </div>
       </header>
 
-      <div className="absolute w-full h-full lg:-left-[650.34px] lg:-top-[400px] -z-30 sm:-left-[400px] -left-[200px] -top-[400px]">
+      <div className="absolute w-[350px] h-[734px] lg:-left-[650.34px] lg:-top-[300px] md:-left-[450.34px] md:-top-[100px] -z-30 sm:-left-[400px] -left-[150px] -top-[250px] object-fill">
         <Image
           src="/LooperGroup.svg"
           alt="imf"

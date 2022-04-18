@@ -62,3 +62,7 @@
   border-radius: 2px;
   transform: scaleX(1);
 }
+
+.anima {
+  /* transition: 300ms ease-in-out; */
+}

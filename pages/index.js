@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Herosection from "../components/sections/Herosection";
 import Logosection from "../components/sections/Logosection";
+import NFTSection from "../components/sections/NFTSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <Herosection />
       <Logosection />
+      <NFTSection />
     </div>
   );
 }
